@@ -1,0 +1,43 @@
+{
+  "name": "console-log-remover",
+  "displayName": "Console Log Remover",
+  "description": "Remove all console.log statements from current file",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:console-log-remover.removeConsoleLogs"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "console-log-remover.removeConsoleLogs",
+        "title": "Remove Console Logs",
+        "icon": "$(trash)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "console-log-remover.removeConsoleLogs",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.70.0"
+  },
+  "dependencies": {
+    "vsce": "^2.15.0"
+  }
+}
