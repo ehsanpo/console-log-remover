@@ -19,3 +19,5 @@ A simple VS Code extension that removes all console.log statements from the curr
 
 This extension contributes the following command:
 * `console-log-remover.removeConsoleLogs`: Remove all console.log statements from current file
+*
+* <img width="1326" alt="Screenshot 2024-11-18 at 21 37 41" src="https://github.com/user-attachments/assets/c8378be1-23de-4153-b031-45237f6d3b32">
